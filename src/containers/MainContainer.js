@@ -1,0 +1,32 @@
+import React, {Component, Fragment} from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import NavBar from '../NavBar.js';
+import Project1Container from './Project1Container';
+import Project2Container from './Project2Container';
+import Project3Container from './Project3Container';
+import Project4Container from './Project4Container';
+import HomeContainer from './HomeContainer.js';
+
+
+const MainContainer = () => {
+
+    return (
+        <Router>
+        <Fragment>
+        <NavBar/>
+        <Switch>
+        #<Route path="/home" component={HomeContainer} />
+          <Route path="/project1" component={Project1Container} />
+          <Route path="/project2" component={Project2Container} />
+          <Route path="/project3" component={Project3Container} />
+          <Route path="/project4" component={Project4Container} />
+        </Switch>
+  
+  
+        </Fragment>
+        </Router>
+    )
+  
+}
+
+export default MainContainer;
