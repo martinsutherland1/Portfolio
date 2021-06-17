@@ -13,6 +13,7 @@ const MainContainer = () => {
     return (
         <Router>
         <Fragment>
+          <header>Portfolio</header>
         <NavBar/>
         <Switch>
         #<Route path="/home" component={HomeContainer} />

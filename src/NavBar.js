@@ -5,7 +5,7 @@ const NavBar = (props) => {
     <header>
       
 
-      <ul>
+      <ul id="nav-bar">
       <li className="navLink">
           <a href="/home">Home</a>
         </li>
