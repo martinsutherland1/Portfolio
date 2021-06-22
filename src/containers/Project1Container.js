@@ -1,7 +1,8 @@
 import React, {Component, Fragment} from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import image from './images/home2.png';
+import image1 from './images/screen1.png'
+import image2 from './images/home2.png';
 
 const Project1Container = () => {
 
@@ -9,26 +10,27 @@ const Project1Container = () => {
 
     return (
         <div>
+            <h1>Project title</h1>
 
 <Carousel>
-                <div>
-                    <img src={image} />
+                <div id="image1">
+                    <img src={image1} />
                     <p className="legend">Class Schedule</p>
                 </div>
                 <div>
-                    <img src={image} />
+                    <img src={image2} />
                     <p className="legend">Legend 2</p>
                 </div>
                 <div>
-                    <img src={image} />
+                    <img src={image2} />
                     <p className="legend">Legend 3</p>
                 </div>
                 <div>
-                    <img src={image}/>
+                    <img src={image2}/>
                     <p className="legend">Legend 4</p>
                 </div>
             </Carousel>
-            <h1>Project title</h1>
+            
              <h4>Scope</h4>
             <p>
                 scope here
