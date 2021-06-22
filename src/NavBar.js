@@ -7,8 +7,9 @@ const NavBar = (props) => {
 
       <ul id="nav-bar">
       <li className="navLink">
-          <a href="/home">Home</a>
+          <a href="/profile">Profile</a>
         </li>
+        
         <li className="navLink">
           <a href="/project1">Project 1</a>
         </li>

@@ -4,9 +4,14 @@ import MainContainer from './containers/MainContainer';
 
 function App() {
   return (
-  <div>
+  <body>
+    <div>
     <MainContainer/>
-  </div>
+
+    </div>
+     
+    
+  </body>
   );
 }
 

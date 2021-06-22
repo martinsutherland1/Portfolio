@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component, Fragment, useState, useEffect} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import NavBar from '../NavBar.js';
 import Project1Container from './Project1Container';
@@ -10,23 +10,52 @@ import HomeContainer from './HomeContainer.js';
 
 const MainContainer = () => {
 
-    return (
-        <Router>
-        <Fragment>
-          <header>Portfolio</header>
-        <NavBar/>
-        <Switch>
-        #<Route path="/home" component={HomeContainer} />
-          <Route path="/project1" component={Project1Container} />
-          <Route path="/project2" component={Project2Container} />
-          <Route path="/project3" component={Project3Container} />
-          <Route path="/project4" component={Project4Container} />
-        </Switch>
+  
+return (
+      <Router>
+      <Fragment>
+        <header><h1>Martin Sutherland - Portfolio</h1></header>
+      <NavBar/>
+      <Switch>
+        <Route path="/Profile" component={HomeContainer} />
+        <Route path="/project1" component={Project1Container} />
+        <Route path="/project2" component={Project2Container} />
+        <Route path="/project3" component={Project3Container} />
+        <Route path="/project4" component={Project4Container} />
+      </Switch>
   
   
-        </Fragment>
-        </Router>
-    )
+      </Fragment>
+      </Router>
+  
+  )
+
+
+
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+
+
+ 
+  
+
+
+  
+
+
+  
+
+ 
   
 }
 
