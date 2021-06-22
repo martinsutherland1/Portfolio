@@ -1,5 +1,7 @@
 import React, {Component, Fragment, useState} from 'react';
-import image1 from './images/screen1.png'
+import image1 from './images/screen1.png';
+import linked from './images/linked.png';
+import github from './images/github.png';
 import Project1Container from './Project1Container';
 import Project2Container from './Project2Container';
 import Project3Container from './Project3Container';
@@ -18,14 +20,18 @@ const HomeContainer = () => {
 
     if (selectValue === undefined) {
         return (
-<div id="bio">
-                  <select name="portfolio" className="dropdown" onChange={handleChange} value={selectValue}>
+<div>
+            <div id="dropdown">
+                <select name="portfolio"  onChange={handleChange} value={selectValue}>
                     <option value="" >Select Answer</option>
                     <option value="project1">Gym Class Manager</option>
                     <option value="project2">Music Quiz</option>
                     <option value="project3">Routes App</option>
                     <option value="project4">Football Stats</option>
                   </select>
+            </div>
+<div id="bio">
+                  
                 
                 <h4>Martin Sutherland</h4>
             <div id="bio-image-div">
@@ -34,12 +40,14 @@ const HomeContainer = () => {
                     </div>
             <p>Junior Developer</p>
             <div id="links">
-            <p><a id="git" href="https://github.com/martinsutherland1">GitHub</a></p>
-            <p><a id="link" href="https://www.linkedin.com/in/martin-sutherland-90/">LinkedIn</a></p> 
+            <p><a id="git" href="https://github.com/martinsutherland1"><img  id="linked"src={linked}/></a></p>
+            <p><a id="link" href="https://www.linkedin.com/in/martin-sutherland-90/"><img  id="github"src={github}/></a></p> 
             </div>
             
             <p>info here</p>
     </div>
+</div>
+          
             
         )
 

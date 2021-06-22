@@ -1,25 +1,23 @@
-body {
-  background-color: #242582;
- 
-  
-}
+
 
 #nav-bar {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   list-style: none;
   text-decoration: none;
-  background-color: #f64c72;
   
-  
+  padding-left: 580px;
   
 }
 
-#nav-bar a:hover {
-  background-color: #242582;
-  color: #f64c72;
+.navLink {
+  border: 1px solid deepskyblue;
+  padding-left: 4px;
+  padding-right: 4px;
+  background-color: #5c5858;
 }
+
+
 
  #nav-bar > li > a {
  text-decoration: none;
@@ -37,9 +35,7 @@ h1 {
  
 }
 
-#image1 {
-  border: solid 2px #5c5858;
-}
+
 
 #bio {
   display: flex;
@@ -53,28 +49,14 @@ h1 {
   border: solid 1px gold;
 }
 
-#link {
-  color: #333;
-  border: 1px solid #5c5858;
-  border-bottom: 5px solid #5c5858;
-  background-color: white;
-  font-size: 12px;
-  margin: 5px;
-  padding: 1px 7px 1px 7px;
-  
-  text-decoration: none;
-}
 
-#git {
-  color: #333;
-  border: 1px solid #5c5858;
-  border-bottom: 5px solid #5c5858;
-  background-color: white;
-  font-size: 12px;
-  margin: 5px;
-  padding: 1px 7px 1px 7px;
-  
-  text-decoration: none;
+
+
+
+#dropdown {
+  padding-left: 540px;
+
+
 }
 
 
@@ -84,5 +66,10 @@ h1 {
 #links {
   display: flex;
   flex-direction: row;
-  padding-left: 490px;
+  padding-left: 580px;
+  
+}
+
+#git {
+  padding-right: 10px;
 }

@@ -14,8 +14,10 @@ const MainContainer = () => {
 return (
       <Router>
       <Fragment>
-        <header><h1>Martin Sutherland - Portfolio</h1></header>
-      <NavBar/>
+        
+        <NavBar/>
+        
+      
       <Switch>
         <Route path="/" component={HomeContainer} />
         </Switch>
