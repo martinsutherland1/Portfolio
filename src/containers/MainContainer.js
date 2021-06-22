@@ -17,12 +17,8 @@ return (
         <header><h1>Martin Sutherland - Portfolio</h1></header>
       <NavBar/>
       <Switch>
-        <Route path="/Profile" component={HomeContainer} />
-        <Route path="/project1" component={Project1Container} />
-        <Route path="/project2" component={Project2Container} />
-        <Route path="/project3" component={Project3Container} />
-        <Route path="/project4" component={Project4Container} />
-      </Switch>
+        <Route path="/" component={HomeContainer} />
+        </Switch>
   
   
       </Fragment>
