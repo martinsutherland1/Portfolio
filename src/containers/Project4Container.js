@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import NavBar from '../NavBar.js';
 
 
 const Project4Container = ({handleChange, selectValue}) => {
@@ -11,8 +12,9 @@ const Project4Container = ({handleChange, selectValue}) => {
        
 
       <div>
+        <NavBar/>
            <select name="portfolio" className="dropdown" onChange={handleChange} value={selectValue}>
-        <option value="" >Select Answer</option>
+        <option value="" >Select Project</option>
         <option value="project1" >Gym Class Manager</option>
         <option value="project2" >Music Quiz</option>
         <option value="project3">Routes App</option>

@@ -1,4 +1,6 @@
-
+body {
+  margin-left: 10%;
+}
 
 #nav-bar {
   display: flex;
@@ -6,47 +8,49 @@
   list-style: none;
   text-decoration: none;
   
-  padding-left: 600px;
+  
   
 }
 
 .navLink {
-  border: 1px solid deepskyblue;
-  padding-left: 4px;
-  padding-right: 4px;
-  background-color: #5c5858;
+  padding-right: 40px;
+  
+  
 }
 
 
 
  #nav-bar > li > a {
  text-decoration: none;
- color: white;
+ color: black;
  font-size: large;
  
 }
 
-h1 {
-  
-  text-align: center;
-  color: #f64c72;
- font-size: xx-large;
- 
- 
-}
+
 
 
 
 #bio {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
+  width: 80%;
+  
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  font-size: smaller;
 }
 
 #bio-image {
   height: 200px;
   width: 200px;
-  border: solid 1px gold;
+  border: solid 1px grey;
 }
 
 
@@ -54,7 +58,8 @@ h1 {
 
 
 #dropdown {
-  padding-left: 560px;
+  background-color: black;
+  
 
 
 }
@@ -66,10 +71,13 @@ h1 {
 #links {
   display: flex;
   flex-direction: row;
-  padding-left: 580px;
   
 }
 
-#git {
+#links > p > a {
   padding-right: 10px;
 }
+
+
+
+
