@@ -19,7 +19,8 @@ return (
         
       
       <Switch>
-        <Route path="/" component={HomeContainer} />
+      <Route path="/" component={HomeContainer} />
+        <Route path="/Portfolio" component={HomeContainer} />
         </Switch>
   
   
